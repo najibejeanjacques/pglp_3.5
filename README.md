@@ -5,22 +5,26 @@ La classe UneClasseMetier (qui a un comportement particulier) qui est un détail
 
 
 2) Proposons une solution respectant DIP:
--Créons la classe abstraite DisplayMessage qui se chargera d'afficher des messages:
-
-      
-            public interface DisplayMessage
-            {
-                  public void display(String message)
-                  {
-                        System.out.println(Localmessage+message);
-                  }
-            }
 
 -Nous allons créer la classe Traitement qui fait un traitement particulier qui implementera la classe DisplayMessage qui ne fait que afficher:
 
-        public class Traitement implements DisplayMessage
+        public class Traitement 
         {
-            display("Début du Traitement");
-            //Traitement 
-            display("FIn du Traiement");
+           public void start()
+           {
+                  //Traitement associé
+           }
         }
+
+-Créons la classe abstraite DisplayMessage qui se chargera d'afficher des messages:
+
+      
+            public classe UneClasseMetier
+            {
+                  public void uneMethodeMetier(Taitement traitement)
+                  {
+                        System.out.println(Localmessage+"Début du Traitement");
+                        traitement.start();
+                        System.out.println(Localmessage+"FIn du Traiement");
+                  }
+            }
