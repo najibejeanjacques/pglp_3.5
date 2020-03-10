@@ -2,13 +2,13 @@ package tp_gl;
 
 import java.time.LocalDateTime;
 
-public class UneClasseMetier {
+public class UneClasseMetier extends Affichage {
 
-	public void uneMethodeMetier(Traitement traitement, LocalDateTime local)
+	public void uneMethodeMetier(Affichage traitement, LocalDateTime local)
 	{
-		System.out.println(local.now()+" Debut de uneMethodeMetier");//log message
-		traitement.start();
-		System.out.println(local.now()+" Fin de uneMethodeMetier"); //log message
+		Debut();//log message
+		//Traitement particulier a faire
+		FIn(); //log message
 	}
 	
 }
