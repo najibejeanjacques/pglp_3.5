@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class UneClasseMetier extends Affichage {
 
-	public void uneMethodeMetier(Affichage traitement, LocalDateTime local)
+	public void uneMethodeMetier()
 	{
 		Debut();//log message
 		//Traitement particulier a faire
